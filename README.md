@@ -24,5 +24,5 @@ This app uses a frequency-based extractive summarization algorithm implemented w
 
 ---
 
-## 🗂️ Project Structure
+
 
