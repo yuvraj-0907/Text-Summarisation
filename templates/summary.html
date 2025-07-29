@@ -1,0 +1,64 @@
+</DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <title>Home</title>
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity-"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJ1SAwiGgFAW/dAiS63Xm"
+        crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4"> Text Summarization</h1>
+            <p class="lead">Extract the best summary for the text</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="display: flex; justify-content: space-around">
+        <p class="original_title col-sm-4">Original Text</p>
+        <p class="summary_title col-sm-4">Summary</p>
+    </div>
+
+    <div class="container srt">
+      <p class="orignalTxt col-sm-6">{{original_txt}}</p>
+      <div class="container col-sm-6">
+        <p class="summaryTxt">{{summary}}</p>
+        <button class="btn btn-success" type="submit" style="margin-left: 10px">
+          Words: {{len_summary}}
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <button class="btn btn-danger" type="submit">
+        Words: {{len_orig_txt}}
+      </button>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity-"sha384-KJ302DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin-"anonymous"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity-"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin-"anonymous"
+    ></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity-"sha384-3ZR6Spejh4U@2d8j0t6vLEHfe/JQGiRRSQQxSfFWp11MquVdAyjUar5+76P
+        crossorigin-"anonymous"
+    ></script>
+  </body>
+</html>
